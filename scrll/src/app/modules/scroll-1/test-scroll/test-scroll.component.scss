@@ -1,0 +1,166 @@
+.parent {
+    margin: auto;
+    background-color: #f9f9f9;
+    // width: 80%;
+
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0px;
+    position: sticky;
+    top: 0px;
+    background-color: #82c7dc;
+    z-index: 2;
+
+}
+
+h1,
+h2,
+figcaption,
+label,
+.price-real,
+.message span,
+p {
+    color: #ffffff;;
+}
+
+.border {
+    border-radius: 6px;
+}
+
+h1 span {
+    color: brown;
+}
+
+.header input {
+    border: 1px solid gray;
+    width: 200px;
+    height: 25px;
+    outline: none;
+}
+
+.message {
+    border: 1px solid gray;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #004768;
+    /* border-radius: 5px; */
+}
+
+.message p {
+    padding-right: 10px;
+}
+
+.message pخریدp {
+    padding-right: 20px;
+    color: brown;
+}
+
+.message span {
+
+    transform: rotate(-20deg);
+    display: inline-block;
+
+}
+
+img {
+    height: 250px;
+    width: 100%;
+    transition: 1s;
+}
+
+.item {
+    display: inline-block;
+    width: 33%;
+
+    /* border-radius: 10px; */
+   
+    text-align: center;
+    overflow: hidden;
+    background-color: whitesmoke;
+    &:hover .child{
+        border: 1px solid gray !important;
+        overflow-x: hidden;
+        box-shadow: 0px 4px 5px 5px rgb(161 139 139 / 34%);
+    }
+    &:hover img{
+        transition: 1s;
+    transform: scale(1.07);
+    }
+
+}
+figure {
+    margin: 0px;
+}
+figcaption,footer{
+   background-color:  #616161
+}
+.titel {
+    background-color: #292929;
+    margin: 0px;
+    border-radius: 6px 6px 0px 0px;
+    padding: 10px;
+
+}
+
+footer div {
+    display: inline-block;
+    width: 49%;
+}
+
+.percent {
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    padding: 2px 7px;
+
+}
+
+.price {
+    color: grey;
+}
+
+.price-real {
+    font-weight: bold;
+}
+
+.price-real span {
+    font-weight: lighter;
+}
+
+
+
+
+@media only screen and (min-width: 1025px) {
+    .item {
+      
+        width: 25%;     
+    }
+  }
+  @media only screen and (max-width: 769px) {
+    .item {
+      
+        width: 33%;     
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .item {
+      
+        width: 50%;    
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .item {
+      
+        width: 100%;    
+    }
+  }
+//   @media only screen and (min-width: 769px){
+//     .item {
+      
+//         width: 31%;    
+//     }
+//   }

@@ -1,0 +1,85 @@
+<div class="parent">
+    <div class="header">
+        <header>
+            <h1>
+                Best-selling products
+                <span>
+                    Test shop
+                </span>
+            </h1>
+        </header>
+        <div>
+           
+            <input class="border form-control d-inline-block text-left" type="text" placeholder="Product Name ">
+            <label class="pr-2"> : Product Name </label>
+        </div>
+    </div>
+    <div class="item-box mb-2">
+        <div class="message  border">
+            <p class="pl-2"> 
+                The best-selling products and selected by customers
+            </p>
+            <p class="pl-4">
+                Only today you have a chance to win the lottery!!!!
+                &nbsp; &nbsp;&nbsp; &nbsp;
+                <!-- <span>
+                    Every purchase more chance
+                </span> -->
+            </p>
+        </div>
+       
+    </div>
+    <virtual-scroller
+    (vsEnd)="fetchMore($event)"
+    [stripedTable]="true"
+    [checkResizeInterval]="100"
+    [enableUnequalChildrenSizes]="true"
+    [RTL]="true"
+    #scroll
+   style="height:  calc(100vh - 300px)"
+    [items]="itemsData"
+    >
+    <div class="item p-2" *ngFor="let item of scroll.viewPortItems">
+        <div class="box-shadow-3 border-r-4  border child">
+            <h2 class="titel">trousers {{item}}</h2>
+        <figure>
+            <img src="./assets/img/img1.jpg">
+            <figcaption>
+                Blue model leotard for men
+            </figcaption>
+        </figure>
+        <footer>
+            <div>
+                <p class="price"><span class="percent border">10%</span><del>100,000</del></p>
+                <p class="price-real"> <span>$</span>{{item}}</p>
+
+            </div>
+            <div>
+                <label for="count">count</label>
+                <select name="count">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <button class="btn btn-sm btn-info mr-1">
+                    
+                        buy
+                    
+                </button>
+            </div>
+
+        </footer>
+        </div>
+    </div> 
+
+
+
+  <div class="text-center" *ngIf="loading">
+    <div  class="spinner-border text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+  </div>
+   
+</virtual-scroller>
+
+</div>

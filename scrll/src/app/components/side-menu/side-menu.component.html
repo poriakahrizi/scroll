@@ -1,0 +1,144 @@
+<div>
+    <nav class=" py-2  nav-header fixed-top">
+        <div class=" col-12 d-flex justify-content-between">
+            <div class="">
+          
+                
+               
+                
+              <a 
+              
+             
+              routerLink="/Patient/messages" 
+              class=" position-relative mx-4 text-white tooltip">
+              <div class="tooltiptext px-2 tooltip-message">
+                messages
+              </div>
+                <i class="fa fa-envelope  fs-25"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    22
+               
+                  
+                </span>
+            </a>
+            <div class="tooltip">
+                <i class="fa fa-user text-white fs-25 cruser"></i>
+                <div class="tooltiptext tooltip-user px-2">
+                    <ng-container >
+                  
+                        <div>
+                            <img src="./assets/img/images.jpg"
+                            class="shadow-lg ProfileImage" style="width: 70%; margin-top: 2px;" 
+                            class="shadow-lg ProfileImage"
+                         alt=" img user"  >
+                        </div>
+                        <h5 class="font-weight-bolder"> </h5>
+                        <p class="mb-1">
+                           &nbsp;
+                            <small>National Code </small>
+                          3240622981
+                        </p>
+                    
+                </ng-container>
+               
+                </div>
+                
+                
+              
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+            
+                    <div class="dropdown show">
+                        <a class="px-2  dropdown-toggle text-white border d-flex align-items-center conetact-us"
+                        style="width: fit-content;"
+                         href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="px-2">
+                            Ways of communication
+                        </span>
+                            
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        
+                          
+                             <a class="dropdown-item  px-2 d-flex align-items-center justify-content-between sub-menu"
+                              href="@poria_19905"
+                            title="Instagram" aria-labelledby="tooltip" target="_blank">
+                            <i class="fa fa fa-home"></i>
+                            <span class="text-bold mx-2 fs-12" > Instagram </span>
+                            
+                           </a>
+                        
+                         
+                          <a class="dropdown-item  px-2 d-flex align-items-center justify-content-between sub-menu" 
+                        
+                   title=" telegram" aria-labelledby="tooltip" target="_blank">
+                   <i class="fa fa fa-home"></i>
+                   <span class="text-bold mx-2 fs-12">telegram</span>
+                     
+                  </a>
+                  
+                        </div>
+                      </div>
+                   
+                     
+                    <i class="fa fa-power-off text-white mr-5 fs-25 ico-logout " 
+                    title="exit" aria-labelledby="tooltip"
+                   ></i>
+                   
+                   
+                
+            </div>
+        </div>
+        
+       
+      
+    </nav>
+    </div> <!-- END TOP NAVBAR -->
+    
+    
+    
+    <div data-component="sidebar">
+      <div class="sidebar">
+      <ul class="list-group flex-column d-inline-block first-menu p-0">
+        <li class="list-group-item  p-0 position-relative">
+            <a routerLink="/scroll-1/test-scroll-1" 
+            [routerLinkActiveOptions]="{exact: true}"
+            routerLinkActive="active"
+             aria-hidden="true"
+            class="link-item w-100" >
+            
+            <i class="fa fa-calendar-plus ico-menu"></i>
+            <span class=" mr-4 text-link">scroll one</span>
+            <span class="after-link"></span>
+        </a>
+        </li>
+
+      
+        
+    
+      
+
+        <li class="list-group-item  p-0 position-relative">
+            <a routerLink="/scroll-2/scroll2" 
+            routerLinkActive="active"
+            aria-hidden="true"
+            class="link-item w-100" >
+            
+            <i class="fa fa-flask ico-menu"></i>
+            <span class=" mr-4 text-link"> scroll tow</span>
+            <span class="after-link"></span>
+        </a>
+        </li>
+      </ul> <!-- /.first-menu -->
+    </div> <!-- /.sidebar -->
+    </div>
+    
+    <div class="wp-content m-0 mt-5 pr-97 pt-5 pl-3 bg-transparent">
+    
+ 
+            <router-outlet></router-outlet>
+        
+     
+    </div>
